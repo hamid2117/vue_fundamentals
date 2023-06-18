@@ -12,13 +12,14 @@
     <script src="https://unpkg.com/vue@next" defer></script>
     <script src="app.js" defer></script>
   </head>
-  <body>
+  <body id="main">
     <header>
       <h1>Vue Course Goals</h1>
+      <p>{{name}}</p>
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p></p>
+      <div v-html="renderHTML()"></div>
     </section>
   </body>
 </html>
