@@ -8,4 +8,13 @@ Learning Vue Js
 - [x] data binding + event methods
 - [x] diff between computed and methods
 - [x] learn about watcher
-- [x] learn dynamic styling
+- [x] learn dynamic styling :class with array and object
+
+#### Conditional Rendering
+
+- [x] vi-if ,else or if-else
+- [x] vi-if vs vi-show
+- [x]
+- [x]
+- [x]
+- [x]
