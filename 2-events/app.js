@@ -28,6 +28,7 @@ const app = Vue.createApp({
       console.log('this runing')
     },
     confirmName() {
+      console.log('I am runing')
       this.confirmedName = this.name
     },
   },

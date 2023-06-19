@@ -23,13 +23,13 @@
       <p>Result: {{ counter }}</p>
       <!-- v-modal -->
       <input type="text" @keyup.enter="confirmName" v-model="name" />
-      <p>Result: {{ confirmedName }}</p>
+      <p>Result: {{ confirmName() }}</p>
       <p>fullName: {{fullName}}</p>
       <!-- .prevent with event will act as e.preventDefault() -->
-      <form @submit.prevent="handleSubmit">
+      <!--<form @submit.prevent="handleSubmit">
         <input type="text" />
         <button type="submit">submit</button>
-      </form>
+      </form>-->
     </section>
   </body>
 </html>
