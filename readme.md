@@ -14,7 +14,8 @@ Learning Vue Js
 
 - [x] vi-if ,else or if-else
 - [x] vi-if vs vi-show
-- [x]
-- [x]
+- [x] learn v-for iteration through array, object and number
+- [x] learn v-for iteration to get data and their scope
+- [x] stop modifier to prevent parent event effect
 - [x]
 - [x]
