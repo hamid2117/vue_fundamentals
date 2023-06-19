@@ -7,4 +7,4 @@ Learning Vue Js
 - [x] done events and methods
 - [x] data binding + event methods
 - [x] diff between computed and methods
-- [ ] learn about watcher (not implemented yet)
+- [x] learn about watcher (not implemented yet)
