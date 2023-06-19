@@ -18,9 +18,18 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button @click="add">Add</button>
-      <button @click="remove">Remove</button>
+      <button @click="add()">Add</button>
+      <button @click.right="remove()">Remove</button>
       <p>Result: {{ counter }}</p>
+      <!-- v-modal -->
+      <input type="text" @keyup.enter="confirmName" v-model="name" />
+      <p>Result: {{ confirmedName }}</p>
+      <p>fullName: {{fullName}}</p>
+      <!-- .prevent with event will act as e.preventDefault() -->
+      <form @submit.prevent="handleSubmit">
+        <input type="text" />
+        <button type="submit">submit</button>
+      </form>
     </section>
   </body>
 </html>
