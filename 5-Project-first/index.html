@@ -46,7 +46,11 @@
       </section>
       <section id="log" class="container">
         <h2>Battle Log</h2>
-        <ul></ul>
+        <ul>
+          <li v-for="({actionBy,actionType,actionDmg}, index) in logGame">
+            {{actionBy}} -- {{actionType}} -- {{actionDmg}}
+          </li>
+        </ul>
       </section>
     </div>
   </body>
