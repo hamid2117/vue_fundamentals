@@ -12,6 +12,7 @@
 
 <script>
 import LearningResource from './components/learning-resource/learningResource.vue'
+
 export default {
   components: {
     LearningResource
