@@ -1,7 +1,21 @@
-<template></template>
+<template>
+  <ul>
+    <learning-resource
+      v-for="item in storedResources"
+      :key="item.id"
+      :title="item.title"
+      :description="item.description"
+      :link="item.link"
+    />
+  </ul>
+</template>
 
 <script>
+import LearningResource from './components/learning-resource/learningResource.vue'
 export default {
+  components: {
+    LearningResource
+  },
   data() {
     return {
       selectedTab: 'stored-resources',
