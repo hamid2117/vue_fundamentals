@@ -1,3 +1,26 @@
+<template>
+  <div>
+    <ul>
+      <learning-resource
+        v-for="item in resource"
+        :key="item.id"
+        :title="item.title"
+        :link="item.link"
+      />
+    </ul>
+  </div>
+</template>
+
+<script>
+import learningResource from './learningResource.vue'
+export default {
+  components: {
+    learningResource
+  },
+  props: ['resource']
+}
+</script>
+
 <style scoped>
 ul {
   list-style: none;

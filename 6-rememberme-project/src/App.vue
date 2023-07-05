@@ -1,21 +1,16 @@
 <template>
-  <ul>
-    <learning-resource
-      v-for="item in storedResources"
-      :key="item.id"
-      :title="item.title"
-      :description="item.description"
-      :link="item.link"
-    />
-  </ul>
+  <div>
+    <base-header />
+  </div>
+  <stored-resource :resource="storedResources" />
 </template>
-
 <script>
-import LearningResource from './components/learning-resource/learningResource.vue'
-
+import StoredResource from './components/learning-resource/StoredResources.vue'
+import BaseHeader from './components/layouts/TheHeader.vue'
 export default {
   components: {
-    LearningResource
+    StoredResource,
+    BaseHeader
   },
   data() {
     return {
