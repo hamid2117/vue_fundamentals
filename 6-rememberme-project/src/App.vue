@@ -1,6 +1,6 @@
 <template>
   <div>
-    <base-header />
+    <base-header title="Remember Me" />
   </div>
   <stored-resource :resource="storedResources" />
 </template>

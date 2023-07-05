@@ -1,10 +1,10 @@
 <template>
-  <button :class="mode">{{ content }}</button>
+  <button :class="mode"><slot /></button>
 </template>
 
 <script>
 export default {
-  props: ['content']
+  props: ['mode']
 }
 </script>
 
@@ -14,7 +14,7 @@ button {
   font-family: inherit;
   background-color: #3a0061;
   border: 1px solid #3a0061;
-  color: white;
+  color: darkblue;
   cursor: pointer;
 }
 
@@ -26,7 +26,7 @@ button:active {
 
 .flat {
   background-color: transparent;
-  color: white;
+  color: darkblue;
   border: none;
 }
 
