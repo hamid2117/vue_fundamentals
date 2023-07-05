@@ -1,8 +1,12 @@
 <template>
-  <button :class="mode"></button>
+  <button :class="mode">{{ content }}</button>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: ['content']
+}
+</script>
 
 <style scoped>
 button {

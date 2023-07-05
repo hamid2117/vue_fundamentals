@@ -1,8 +1,12 @@
 <template>
-  <header></header>
+  <header>{{ title }}</header>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: ['title']
+}
+</script>
 
 <style scoped>
 header {
