@@ -18,11 +18,13 @@
       </div>
     </form>
   </base-card>
-  <base-dailog v-if="dailogOpen" :close-dailog="closeDailog" @close="closeDailog">
-    <template #default>
-      <h1>Please input some value</h1>
-    </template>
-  </base-dailog>
+  <teleport to="body">
+    <base-dailog v-if="dailogOpen" :close-dailog="closeDailog" @close="closeDailog">
+      <template #default>
+        <h1>Please input some value</h1>
+      </template>
+    </base-dailog>
+  </teleport>
 </template>
 
 <script>
