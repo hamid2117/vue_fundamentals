@@ -3,21 +3,15 @@
     <form @submit.prevent="handleSubmit">
       <div class="form-control">
         <label for="title"> Title </label>
-        <input type="text" v-model="resourceData.title" name="title" id="title" />
+        <input type="text" ref="titleInput" name="title" id="title" />
       </div>
       <div class="form-control">
         <label for="description"> Description </label>
-        <textarea
-          rows="3"
-          v-model="resourceData.description"
-          type="text"
-          name="description"
-          id="description"
-        />
+        <textarea rows="3" ref="descInput" type="text" name="description" id="description" />
       </div>
       <div class="form-control">
         <label for="link"> Link </label>
-        <input type="url" v-model="resourceData.link" name="link" id="link" />
+        <input type="url" ref="linkInput" name="link" id="link" />
       </div>
       <div>
         <base-button type="submit"> Add Resource </base-button>
@@ -41,12 +35,13 @@ export default {
   methods: {
     handleSubmit() {
       //e.preventDefault()
-      this.setStoredResources({ id: new Date().toISOString(), ...this.resourceData })
-      this.resourceData = {
-        title: '',
-        description: '',
-        link: ''
+      const resourceData = {
+        id: new Date().toISOString(),
+        title: this.$refs.titleInput.value,
+        description: this.$refs.descInput.value,
+        link: this.$refs.linkInput.value
       }
+      this.setStoredResources(resourceData)
     }
   }
 }
