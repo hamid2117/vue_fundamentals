@@ -35,13 +35,20 @@ export default {
   methods: {
     handleSubmit() {
       //e.preventDefault()
+      const titleInput = this.$refs.titleInput.value
+      const descInput = this.$refs.descInput.value
+      const linkInput = this.$refs.linkInput.value
       const resourceData = {
         id: new Date().toISOString(),
-        title: this.$refs.titleInput.value,
-        description: this.$refs.descInput.value,
-        link: this.$refs.linkInput.value
+        title: titleInput,
+        description: descInput,
+        link: linkInput
       }
       this.setStoredResources(resourceData)
+
+      this.$refs.titleInput.value = ''
+      this.$refs.descInput.value = ''
+      this.$refs.linkInput.value = ''
     }
   }
 }

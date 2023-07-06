@@ -7,7 +7,9 @@
       >Add Resources</base-button
     >
   </base-card>
-  <component :is="selectedTab"></component>
+  <keep-alive>
+    <component :is="selectedTab"></component>
+  </keep-alive>
 </template>
 <script>
 import StoredResource from './StoredResources.vue'
