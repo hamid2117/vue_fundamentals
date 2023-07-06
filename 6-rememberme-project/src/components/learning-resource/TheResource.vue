@@ -46,12 +46,17 @@ export default {
   },
   provide() {
     return {
-      resource: this.storedResources
+      resource: this.storedResources,
+      setStoredResources: this.setStoredResources
     }
   },
   methods: {
     setSelectedTab(tab) {
       this.selectedTab = tab
+    },
+    setStoredResources(data) {
+      this.storedResources.unshift(data)
+      this.selectedTab = 'stored-resource'
     }
   }
 }

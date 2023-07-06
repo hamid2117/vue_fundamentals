@@ -1,7 +1,55 @@
-<template></template>
+<template>
+  <base-card>
+    <form @submit.prevent="handleSubmit">
+      <div class="form-control">
+        <label for="title"> Title </label>
+        <input type="text" v-model="resourceData.title" name="title" id="title" />
+      </div>
+      <div class="form-control">
+        <label for="description"> Description </label>
+        <textarea
+          rows="3"
+          v-model="resourceData.description"
+          type="text"
+          name="description"
+          id="description"
+        />
+      </div>
+      <div class="form-control">
+        <label for="link"> Link </label>
+        <input type="url" v-model="resourceData.link" name="link" id="link" />
+      </div>
+      <div>
+        <base-button type="submit"> Add Resource </base-button>
+      </div>
+    </form>
+  </base-card>
+</template>
 
 <script>
-export default {}
+export default {
+  inject: ['setStoredResources'],
+  data() {
+    return {
+      resourceData: {
+        title: '',
+        description: '',
+        link: ''
+      }
+    }
+  },
+  methods: {
+    handleSubmit() {
+      //e.preventDefault()
+      this.setStoredResources({ id: new Date().toISOString(), ...this.resourceData })
+      this.resourceData = {
+        title: '',
+        description: '',
+        link: ''
+      }
+    }
+  }
+}
 </script>
 <style scoped>
 label {
