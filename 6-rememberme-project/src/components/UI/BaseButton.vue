@@ -14,7 +14,7 @@ button {
   font-family: inherit;
   background-color: #3a0061;
   border: 1px solid #3a0061;
-  color: darkblue;
+  color: white;
   cursor: pointer;
 }
 
