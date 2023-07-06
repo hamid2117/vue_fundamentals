@@ -1,10 +1,10 @@
 <template>
-  <button :class="mode">{{ content }}</button>
+  <button :class="mode"><slot /></button>
 </template>
 
 <script>
 export default {
-  props: ['content']
+  props: ['mode']
 }
 </script>
 
@@ -26,7 +26,7 @@ button:active {
 
 .flat {
   background-color: transparent;
-  color: white;
+  color: darkblue;
   border: none;
 }
 

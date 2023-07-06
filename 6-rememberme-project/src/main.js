@@ -1,4 +1,3 @@
-import './assets/main.css'
 import BaseCard from './components/UI/BaseCard.vue'
 import BaseButton from './components/UI/BaseButton.vue'
 import BaseDailog from './components/UI/BaseDailog.vue'

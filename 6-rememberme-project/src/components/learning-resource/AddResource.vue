@@ -1,3 +1,58 @@
+<template>
+  <base-card>
+    <form @submit.prevent="handleSubmit">
+      <div class="form-control">
+        <label for="title"> Title </label>
+        <input type="text" ref="titleInput" name="title" id="title" />
+      </div>
+      <div class="form-control">
+        <label for="description"> Description </label>
+        <textarea rows="3" ref="descInput" type="text" name="description" id="description" />
+      </div>
+      <div class="form-control">
+        <label for="link"> Link </label>
+        <input type="url" ref="linkInput" name="link" id="link" />
+      </div>
+      <div>
+        <base-button type="submit"> Add Resource </base-button>
+      </div>
+    </form>
+  </base-card>
+</template>
+
+<script>
+export default {
+  inject: ['setStoredResources'],
+  data() {
+    return {
+      resourceData: {
+        title: '',
+        description: '',
+        link: ''
+      }
+    }
+  },
+  methods: {
+    handleSubmit() {
+      //e.preventDefault()
+      const titleInput = this.$refs.titleInput.value
+      const descInput = this.$refs.descInput.value
+      const linkInput = this.$refs.linkInput.value
+      const resourceData = {
+        id: new Date().toISOString(),
+        title: titleInput,
+        description: descInput,
+        link: linkInput
+      }
+      this.setStoredResources(resourceData)
+
+      this.$refs.titleInput.value = ''
+      this.$refs.descInput.value = ''
+      this.$refs.linkInput.value = ''
+    }
+  }
+}
+</script>
 <style scoped>
 label {
   font-weight: bold;
