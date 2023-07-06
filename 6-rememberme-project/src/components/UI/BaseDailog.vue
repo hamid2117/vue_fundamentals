@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div @click="$emit('close')"></div>
   <dialog open>
     <header>
       <slot name="header">
@@ -7,18 +7,21 @@
       </slot>
     </header>
     <section>
-      <slot></slot>
+      <slot name="default"></slot>
     </section>
     <menu>
       <slot name="actions">
-        <base-button>Close</base-button>
+        <base-button @click="closeDailog">Close</base-button>
       </slot>
     </menu>
   </dialog>
 </template>
 
 <script>
-export default {}
+export default {
+  props: ['closeDailog'],
+  emits: ['close']
+}
 </script>
 
 <style scoped>
