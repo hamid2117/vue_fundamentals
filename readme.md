@@ -50,3 +50,19 @@ Learning Vue Js
 - [x] global vs local component
 - [x] scoped styles
 - [x] basics of slots - named slots - slot styles & compilation
+
+#### learn about inject in vue js scope of component | 23 June
+
+- [x] provide - inject to prevent from props drilling in vue
+- [x] provide - inject vs props & custom events
+- [x] global vs local component
+- [x] scoped styles
+- [x] basics of slots - named slots - slot styles & compilation
+
+#### done 115 - 129 (14) videos out of 328 videos | 4 July
+
+#### done 129 - 132 (3) videos out of 328 videos | 5 July
+
+#### done 132 - 139 (7) videos out of 328 videos | 6 July
+
+####
