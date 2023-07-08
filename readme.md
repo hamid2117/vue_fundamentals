@@ -61,8 +61,15 @@ Learning Vue Js
 
 #### done 115 - 129 (14) videos out of 328 videos | 4 July
 
+- [x] Revised all concepts bcs of 8 days break
+- [x] Learned about simple slot & scoped slot
+- [x] Component, keep–alive and teleport
+- [x] Making a project “remember me” to revise all concepts which I have learned so far.
+
 #### done 129 - 132 (3) videos out of 328 videos | 5 July
+
+- [x] Completing Project “ remember me”.
 
 #### done 132 - 139 (7) videos out of 328 videos | 6 July
 
-####
+- [x] Completing Project “ remember me”.
