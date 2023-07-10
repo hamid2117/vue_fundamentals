@@ -73,3 +73,9 @@ Learning Vue Js
 #### done 132 - 139 (7) videos out of 328 videos | 6 July
 
 - [x] Completing Project “ remember me”.
+
+#### done 140 - 164 (14) videos out of 328 videos | 7 July
+
+- [x] learn about form in vue js
+- [x] learn about custom component inputs control
+- [x] learn about https request in vue
