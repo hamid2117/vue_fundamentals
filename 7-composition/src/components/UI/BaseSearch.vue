@@ -11,7 +11,10 @@
 
 <script setup>
 import { defineProps, defineEmits } from 'vue';
-export default {
+
+const props = defineProps(["searchTerm"])
+const emit = defineEmits()
+
   props: ['searchTerm'],
   emits: ['search'],
   methods: {
@@ -19,7 +22,6 @@ export default {
       this.$emit('search', event.target.value);
     },
   },
-};
 </script>
 
 <style scoped>
