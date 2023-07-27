@@ -10,6 +10,7 @@
 </template>
 
 <script setup>
+import { defineProps, defineEmits } from 'vue';
 export default {
   props: ['searchTerm'],
   emits: ['search'],
