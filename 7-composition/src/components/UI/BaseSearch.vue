@@ -12,16 +12,11 @@
 <script setup>
 import { defineProps, defineEmits } from 'vue';
 
-const props = defineProps(["searchTerm"])
-const emit = defineEmits()
-
-  props: ['searchTerm'],
-  emits: ['search'],
-  methods: {
-    search(event) {
-      this.$emit('search', event.target.value);
-    },
-  },
+const props = defineProps(['searchTerm']);
+const emit = defineEmits();
+const search = (e) => {
+  emit('search', e.target.value);
+};
 </script>
 
 <style scoped>
