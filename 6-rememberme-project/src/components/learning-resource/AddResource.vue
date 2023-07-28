@@ -18,6 +18,13 @@
       </div>
     </form>
   </base-card>
+  <teleport to="body">
+    <base-dailog v-if="dailogOpen" :close-dailog="closeDailog" @close="closeDailog">
+      <template #default>
+        <h1>Please input some value</h1>
+      </template>
+    </base-dailog>
+  </teleport>
 </template>
 
 <script>
@@ -25,14 +32,13 @@ export default {
   inject: ['setStoredResources'],
   data() {
     return {
-      resourceData: {
-        title: '',
-        description: '',
-        link: ''
-      }
+      dailogOpen: false
     }
   },
   methods: {
+    closeDailog() {
+      this.dailogOpen = false
+    },
     handleSubmit() {
       //e.preventDefault()
       const titleInput = this.$refs.titleInput.value
@@ -43,6 +49,10 @@ export default {
         title: titleInput,
         description: descInput,
         link: linkInput
+      }
+      if (titleInput.trim() === '' || descInput.trim() === '' || linkInput.trim() === '') {
+        this.dailogOpen = true
+        return
       }
       this.setStoredResources(resourceData)
 

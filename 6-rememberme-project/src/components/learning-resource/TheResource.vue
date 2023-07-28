@@ -49,10 +49,17 @@ export default {
   provide() {
     return {
       resource: this.storedResources,
-      setStoredResources: this.setStoredResources
+      setStoredResources: this.setStoredResources,
+      deleteResource: this.deleteResource
     }
   },
   methods: {
+    deleteResource(id) {
+      const resourceIndex = this.storedResources.findIndex((data) => {
+        return data.id === id
+      })
+      this.storedResources.splice(resourceIndex, 1)
+    },
     setSelectedTab(tab) {
       this.selectedTab = tab
     },

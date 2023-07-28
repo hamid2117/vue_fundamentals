@@ -1,14 +1,13 @@
 <template>
-  <div>
-    <ul>
-      <learning-resource
-        v-for="item in resource"
-        :key="item.id"
-        :title="item.title"
-        :link="item.link"
-      />
-    </ul>
-  </div>
+  <ul>
+    <learning-resource
+      v-for="item in resource"
+      :key="item.id"
+      :id="item.id"
+      :title="item.title"
+      :link="item.link"
+    />
+  </ul>
 </template>
 
 <script>
