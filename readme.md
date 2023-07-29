@@ -1,3 +1,13 @@
+#### 1
+
+include basics of data rendering
+
+#### 2
+
+include how events work in vue
+
+# Progress :-
+
 Learning Vue Js
 
 #### Basics | data rendering & events | 17-18 June Weekend
