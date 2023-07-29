@@ -6,6 +6,18 @@ include basics of data rendering
 
 include how events work in vue
 
+#### 2
+
+include how events work in vue
+
+#### 2
+
+include how events work in vue
+
+#### 2
+
+include how events work in vue
+
 # Progress :-
 
 Learning Vue Js
