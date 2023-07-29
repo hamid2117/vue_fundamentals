@@ -4,19 +4,19 @@ include basics of data rendering
 
 #### 2
 
-include how events work in vue
+include how events work in vue , implemented computed, watch and methods
 
-#### 2
+#### 3
 
-include how events work in vue
+css in Vue JS
 
-#### 2
+#### 4
 
-include how events work in vue
+implemented v-if , v-for
 
-#### 2
+#### 5
 
-include how events work in vue
+build project and revised all concepts which I learn so far.
 
 # Progress :-
 
