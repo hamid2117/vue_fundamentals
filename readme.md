@@ -18,6 +18,18 @@ implemented v-if , v-for
 
 build project and revised all concepts which I learn so far.
 
+#### 6
+
+build another project to get good grip on vue concepts
+
+#### 7
+
+optional API Project converted to composition api
+
+#### 8
+
+learn about composition api in vuex
+
 # Progress :-
 
 Learning Vue Js
