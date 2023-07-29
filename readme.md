@@ -30,6 +30,10 @@ optional API Project converted to composition api
 
 learn about composition api in vuex
 
+#### 9
+
+learn about mixins in optional API and custom hooks in composition API
+
 # Progress :-
 
 Learning Vue Js
